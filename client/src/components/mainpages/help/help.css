@@ -1,0 +1,21 @@
+/*=============== Need Help ===============*/
+.accordian_need_help {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  border-left: 2px solid #008d71;
+}
+.btn_accordion {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 23px 25px 23px 30px;
+  cursor: pointer;
+  outline: 0px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border: none;
+  justify-content: space-between;
+}

@@ -1,0 +1,9 @@
+.svg_notFoundIcon {
+  display: grid;
+  place-content: center;
+}
+
+.svg_notFoundIcon > svg {
+  width: 22rem;
+  height: fit-content;
+}

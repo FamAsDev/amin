@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.69466a23.chunk.css",
+    "main.js": "/static/js/main.0214c78d.chunk.js",
+    "main.js.map": "/static/js/main.0214c78d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.03887cff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.03887cff.js.map",
+    "static/css/2.97503911.chunk.css": "/static/css/2.97503911.chunk.css",
+    "static/js/2.681bc80e.chunk.js": "/static/js/2.681bc80e.chunk.js",
+    "static/js/2.681bc80e.chunk.js.map": "/static/js/2.681bc80e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.97503911.chunk.css.map": "/static/css/2.97503911.chunk.css.map",
+    "static/css/main.69466a23.chunk.css.map": "/static/css/main.69466a23.chunk.css.map",
+    "static/js/2.681bc80e.chunk.js.LICENSE.txt": "/static/js/2.681bc80e.chunk.js.LICENSE.txt",
+    "static/media/ADMIN.e9eb3b97.svg": "/static/media/ADMIN.e9eb3b97.svg",
+    "static/media/AdminNight.2fc496d4.svg": "/static/media/AdminNight.2fc496d4.svg",
+    "static/media/AminNight.0b2350ba.svg": "/static/media/AminNight.0b2350ba.svg",
+    "static/media/bg-1.d5626a62.png": "/static/media/bg-1.d5626a62.png",
+    "static/media/logo.81d4da40.svg": "/static/media/logo.81d4da40.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03887cff.js",
+    "static/css/2.97503911.chunk.css",
+    "static/js/2.681bc80e.chunk.js",
+    "static/css/main.69466a23.chunk.css",
+    "static/js/main.0214c78d.chunk.js"
+  ]
+}

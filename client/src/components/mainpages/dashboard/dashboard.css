@@ -1,0 +1,350 @@
+/*=============== Checkout ===============*/
+.checkout_card {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 16px 0px;
+}
+.modal-header h4 {
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  margin-bottom: 15px;
+}
+h3.card_header_title {
+  font-family: Lato, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
+  margin-bottom: 35px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+h3.card_header_title::before {
+  counter-increment: section-counter 1;
+  content: counter(section-counter);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(0, 158, 127);
+  margin-right: 15px;
+}
+.delivery_schedule h3.card_header_title::before {
+  counter-increment: section-counter 2;
+  content: counter(section-counter);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(0, 158, 127);
+  margin-right: 15px;
+}
+.contact_number h3.card_header_title::before {
+  counter-increment: section-counter 3;
+  content: counter(section-counter);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(0, 158, 127);
+  margin-right: 15px;
+}
+.payment_option h3.card_header_title::before {
+  counter-increment: section-counter 4;
+  content: counter(section-counter);
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(0, 158, 127);
+  margin-right: 15px;
+}
+.add_address {
+  width: auto;
+  height: auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(0, 158, 127);
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.add_address svg {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin: 0px 8px 0px 0px;
+}
+.address_card {
+  border: 1px solid rgb(0, 158, 127);
+  border-radius: 6px;
+  background-color: rgb(247, 247, 247);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  transition: all 0.25s ease 0s;
+  cursor: pointer;
+}
+.address_card h4 {
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  line-height: 1.2;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.address_card button.address_card_btn {
+  background-color: rgb(255, 91, 96);
+  display: none;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+.address_card:hover:hover button.address_card_btn {
+  display: flex;
+}
+#add_address input,
+#add_contact input {
+  display: block;
+  width: 100%;
+  padding: 0px 18px;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  line-height: inherit;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 17, 54);
+  height: 48px;
+  transition: all 0.25s ease 0s;
+  margin-bottom: 30px;
+}
+#add_address textarea {
+  height: auto;
+  min-height: 171px;
+  padding-top: 15px;
+  resize: none;
+  margin-bottom: 30px;
+}
+.address_card input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.payment_card_style {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(119, 121, 140);
+  display: block;
+  margin-bottom: 11px;
+}
+.payment_card_digit {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.payment_card_digit span {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  line-height: 1.25;
+}
+.payment_card_style_name {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(13, 17, 54);
+  display: block;
+}
+.payment_option .owl-nav button.owl-prev i,
+.payment_option .owl-nav button.owl-next i {
+  top: 50px;
+  right: 10px;
+  position: absolute;
+}
+
+/* credit card */
+.creditCardForm {
+  max-width: 700px;
+  background-color: #fff;
+  margin: 100px auto;
+  overflow: hidden;
+  padding: 25px;
+  color: #4c4e56;
+}
+.creditCardForm label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.creditCardForm .heading h1 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #4c4e56;
+}
+.creditCardForm .payment {
+  float: left;
+  font-size: 18px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  position: relative;
+}
+.creditCardForm .payment .form-group {
+  float: left;
+  margin-bottom: 15px;
+}
+.creditCardForm .payment .form-control {
+  line-height: 40px;
+  height: auto;
+  padding: 0 16px;
+}
+.creditCardForm .owner {
+  width: 63%;
+  margin-right: 10px;
+}
+.creditCardForm .CVV {
+  width: 35%;
+}
+.creditCardForm #card-number-field {
+  width: 100%;
+}
+.creditCardForm #expiration-date {
+  width: 49%;
+}
+.creditCardForm #credit_cards {
+  width: 50%;
+  margin-top: 25px;
+  text-align: right;
+}
+.creditCardForm #pay-now {
+  width: 100%;
+  margin-top: 25px;
+}
+.transparent {
+  opacity: 0.2;
+}
+label.profile_label input {
+  width: 20px;
+  height: 20px;
+}
+.profile_setting .add_contact {
+  width: 100%;
+  padding: 31px;
+  text-align: center;
+  border: 1px dashed rgb(241, 241, 241);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.profile_setting .add_contact:hover {
+  width: 100%;
+  padding: 31px;
+  color: var(--lightgreen);
+  text-align: center;
+  border: 1px dashed var(--lightgreen);
+}
+button.bg-white.add_contact a {
+  font-weight: 500;
+  color: var(--lightgreen);
+}
+@media (max-width: 650px) {
+  .creditCardForm .owner,
+  .creditCardForm .CVV,
+  .creditCardForm #expiration-date,
+  .creditCardForm #credit_cards {
+    width: 100%;
+  }
+  .creditCardForm #credit_cards {
+    text-align: left;
+  }
+}
+
+/*  Examples Section */
+.examples {
+  max-width: 700px;
+  background-color: #fff;
+  margin: 0 auto 75px;
+  padding: 30px 50px;
+  color: #4c4e56;
+}
+.examples-note {
+  text-align: center;
+  font-size: 14px;
+  max-width: 370px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  color: #7a7a7a;
+}
+.examples table {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+div#credit_cards img {
+  width: 40px;
+}
+.checkout_sidebar table td {
+  border: none;
+}
+.checkout_sidebar {
+  position: sticky;
+  top: 100px;
+  padding: 10px;
+}
+.checkout_style {
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+section.checkout label {
+  width: 100%;
+}

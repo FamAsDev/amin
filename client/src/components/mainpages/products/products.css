@@ -1,0 +1,210 @@
+/* slider banner image */
+.slick-slide img {
+  object-fit: cover;
+  width: 502px;
+  display: block;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  height: 282px;
+}
+.slick__item.fullBanner > img {
+  width: 100% !important;
+  object-fit: cover;
+  display: block;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  height: 282px;
+}
+/* hide slider prev / next buttons */
+.slick-slider.mb-5.text-center.slick-initialized > button {
+  display: none !important;
+}
+
+/* Filter sidebar button */
+button.filter {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--lightgreen);
+}
+button.filter:hover {
+  color: #ffffff;
+  background-color: #009e7f;
+  border-color: #009e7f;
+}
+button.filter i.fa.fa-filter.pl-2 {
+  font-size: 12px;
+}
+
+/* responsive menu */
+.modal.bottom .modal-dialog {
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+}
+/* Top and Bottom */
+.modal.bottom .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.modal.bottom .modal-content {
+  height: 75vh;
+  overflow-y: auto;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.modal.bottom .modal-body {
+  padding: 15px 15px;
+}
+/* Bottom */
+.modal.bottom.fade .modal-dialog {
+  bottom: -100%;
+  -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+  transition: opacity 0.3s linear, bottom 0.3s ease-out;
+}
+.modal.bottom.fade.show .modal-dialog {
+  bottom: 0;
+}
+.modal.bottom.fade .modal-dialog {
+  bottom: -100%;
+}
+.modal.bottom .accordion {
+  max-width: 100%;
+}
+
+button.menu_close {
+  position: fixed;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  color: var(--darkblue);
+  border: 0px;
+  outline: 0px;
+  box-shadow: none;
+  border-radius: 50%;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/*=============== registration ===============*/
+/* #login input,
+#signup input {
+  display: block;
+  width: 100%;
+  padding: 0px 18px;
+  appearance: none;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  line-height: inherit;
+  border: 1px solid rgb(241, 241, 241);
+  border-radius: 6px;
+  color: rgb(13, 17, 54);
+  transition: all 0.25s ease 0s;
+  height: 48px;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 10px;
+} */
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100 !important;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+
+/*=============== Product ===============*/
+.sidebar {
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  width: 17vw;
+  top: 10%;
+  padding: 12px;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 0px 15px 20px;
+  position: relative;
+  font-weight: bolder;
+  -o-transition: all 0.4s ease;
+  font-size: 15px;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(13, 17, 54);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out 0s;
+  outline: 0px;
+  margin-bottom: 10px;
+}
+.accordion .link:hover {
+  color: var(--lightgreen);
+}
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+.accordion svg {
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+ul.category_menu > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 18px;
+}
+.accordion li.open i.icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* -------------- product Item --------------- */
+@import url("../utils/productItem/productItem.css");
+
+/* Select all */
+.delete-all {
+  text-align: right;
+  margin: 20px;
+}
+.delete-all input {
+  height: 25px;
+  width: 25px;
+  transform: translateY(5px);
+  margin: 0 15px;
+}
+.delete-all span {
+  text-transform: uppercase;
+  color: rgb(0, 158, 127);
+  letter-spacing: 1.3px;
+}
